@@ -1,6 +1,5 @@
 import { ArrowRight, ArrowUpRight, CheckCircle2 } from "lucide-react";
-import CountUp from "react-countup";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 import aboutTeam from "../../assets/about-team.jpg";
 import heroRefinery from "../../assets/hero-refinery.jpg";
@@ -225,10 +224,10 @@ export default function About() {
 
 function Stats() {
   const ref = useRef<HTMLDivElement>(null);
-  const [start, setStart] = useState(false);
+  // const [start, setStart] = useState(false);
   useEffect(() => {
     if (!ref.current) return;
-    const io = new IntersectionObserver(([e]) => { if (e.isIntersecting) { setStart(true); io.disconnect(); } }, { threshold: 0.2 });
+    const io = new IntersectionObserver(([e]) => { if (e.isIntersecting) { io.disconnect(); } }, { threshold: 0.2 });
     io.observe(ref.current);
     return () => io.disconnect();
   }, []);

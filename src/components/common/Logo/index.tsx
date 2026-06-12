@@ -8,8 +8,8 @@ interface LogoProps {
   className?: string;
 }
 
-export default function Logo({ variant = "dark", showTagline = true, className }: LogoProps) {
-  const sub = variant === "light" ? "text-white/70" : "text-brand-muted";
+export default function Logo({ showTagline = true, className }: LogoProps) {
+  // const sub = variant === "light" ? "text-white/70" : "text-brand-muted";
   return (
     <Link to="/" className={clsx("inline-flex flex-col leading-none font-display", className)}>
       <span className="text-2xl md:text-[1.7rem] font-black tracking-tight">

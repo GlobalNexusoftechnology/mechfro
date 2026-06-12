@@ -1,6 +1,6 @@
 
 import { z } from "zod";
-import { Mail, Phone, MapPin, ArrowRight, Send, Clock, Globe } from "lucide-react";
+import { Mail, Phone, MapPin, ArrowRight, Send, Clock } from "lucide-react";
 import { useState } from "react";
 import clsx from "clsx";
 import { services } from "../../lib/services-data";

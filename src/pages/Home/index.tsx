@@ -1,45 +1,44 @@
-import { useEffect, useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade, Pagination, Navigation } from "swiper/modules";
-import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
   ArrowUpRight,
+  Award,
+  Building2,
   CheckCircle2,
+  Cog,
+  Droplet,
   Factory,
   Fuel,
-  Ship,
-  Droplet,
-  Zap,
-  Building2,
-  Cog,
-  ShieldCheck,
-  Wrench,
-  Truck,
-  Award,
   Gauge,
   Layers,
   Quote,
+  ShieldCheck,
+  Ship,
+  Truck,
+  Wrench,
+  Zap,
 } from "lucide-react";
+import { useEffect, useRef } from "react";
+import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 
-import heroRefinery from "../../assets/hero-refinery.jpg";
-import heroValves from "../../assets/hero-valves.jpg";
-import heroTanks from "../../assets/hero-tanks.jpg";
+import { Link } from "react-router-dom";
 import aboutTeam from "../../assets/about-team.jpg";
-import qualityDark from "../../assets/quality-dark.jpg";
-import indPower from "../../assets/ind-power.jpg";
+import heroRefinery from "../../assets/hero-refinery.jpg";
+import heroTanks from "../../assets/hero-tanks.jpg";
+import heroValves from "../../assets/hero-valves.jpg";
 import indOilgas from "../../assets/ind-oilgas.jpg";
+import indPower from "../../assets/ind-power.jpg";
 import indWater from "../../assets/ind-water.jpg";
 import prodBars from "../../assets/prod-bars.jpg";
-import { LinkButton } from "../../components/ui/Buttons";
+import qualityDark from "../../assets/quality-dark.jpg";
 import SectionHeading from "../../components/common/SectionHeading";
-import { Link } from "react-router-dom";
+import { LinkButton } from "../../components/ui/Buttons";
 import { services } from "../../lib/services-data";
 
 
@@ -564,11 +563,10 @@ function FeaturedSlider() {
 /* ---------- STATS ---------- */
 function StatsSection() {
   const ref = useRef<HTMLDivElement>(null);
-  const [start, setStart] = useState(false);
   useEffect(() => {
     if (!ref.current) return;
     const io = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting) { setStart(true); io.disconnect(); } },
+      ([e]) => { if (e.isIntersecting) { io.disconnect(); } },
       { threshold: 0.2 },
     );
     io.observe(ref.current);

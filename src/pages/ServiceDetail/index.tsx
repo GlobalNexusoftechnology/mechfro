@@ -1,5 +1,5 @@
 import { ArrowRight, ArrowUpRight, CheckCircle2 } from "lucide-react";
-import { services, type Service } from "../../lib/services-data";
+import { services } from "../../lib/services-data";
 import { Link, useParams, Navigate } from "react-router-dom"; import { LinkButton } from "../../components/ui/Buttons";
 import SectionHeading from "../../components/common/SectionHeading";
 
