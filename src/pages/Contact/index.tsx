@@ -116,7 +116,7 @@ export default function Contact() {
                 <ul className="mt-7 space-y-5 text-sm">
                   <InfoRow icon={<Phone size={16} />} label="Phone" value="+91 82863 53007 " href="tel:+919999999999" />
                   <InfoRow icon={<Mail size={16} />} label="Email" value="info@mechfro.com" href="mailto:info@mechfro.com" />
-                  <InfoRow icon={<MapPin size={16} />} label="Headquarters" value="Industrial Hub, Mumbai, India" />
+                  <InfoRow icon={<MapPin size={16} />} label="Headquarters" value="Mechfro Engineering and Techlonology, 15 no. Building, Flat 12 No.,   LIG Colony, Kurla west, Mumbai - 400070., India" />
                   <InfoRow icon={<Clock size={16} />} label="Hours" value="Mon–Sat, 09:00–18:30 IST" />
                   {/* <InfoRow icon={<Globe size={16} />} label="Supply network" value="5 continents · 24 countries" /> */}
                 </ul>
@@ -137,7 +137,8 @@ export default function Contact() {
             <div className="border border-brand-border aspect-[5/4] relative overflow-hidden bg-brand-light">
               <iframe
                 title="MECHFRO Location"
-                src="https://maps.google.com/maps?q=Mumbai,%20Maharashtra,%20India&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Mechfro%20Engineering%20and%20Technology,%2015%20No.%20Building,%20Flat%2012%20No.,%20LIG%20Colony,%20Kurla%20West,%20Mumbai%20400070,%20Maharashtra,%20India&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                // src="https://maps.google.com/maps?q=Mumbai,%20Maharashtra,%20India&t=&z=11&ie=UTF8&iwloc=&output=embed"
                 className="absolute inset-0 w-full h-full"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
