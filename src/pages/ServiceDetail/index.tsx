@@ -50,7 +50,7 @@ export default function ServiceDetail() {
 
             <div className="mt-12 grid sm:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-sm uppercase tracking-[0.22em] text-brand-red font-bold">Applications</h3>
+                {/* <h3 className="text-sm uppercase tracking-[0.22em] text-brand-red font-bold">Applications</h3> */}
                 <ul className="mt-5 space-y-3">
                   {service.applications.map((a) => (
                     <li key={a} className="flex items-start gap-3 text-brand-dark">
@@ -60,11 +60,11 @@ export default function ServiceDetail() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-sm uppercase tracking-[0.22em] text-brand-red font-bold">Benefits</h3>
+                {/* <h3 className="text-sm uppercase tracking-[0.22em] text-brand-red font-bold">Benefits</h3> */}
                 <ul className="mt-5 space-y-3">
                   {service.benefits.map((a) => (
                     <li key={a} className="flex items-start gap-3 text-brand-dark">
-                      <CheckCircle2 size={16} className="text-brand-blue mt-1 shrink-0" /> {a}
+                      <span className="w-1.5 h-1.5 bg-brand-red mt-2.5 shrink-0" /> {a}
                     </li>
                   ))}
                 </ul>

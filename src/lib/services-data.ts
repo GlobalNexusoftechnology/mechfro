@@ -24,17 +24,17 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    slug: "Machanical",
-    title: "Machanical",
-    short: "Precision-engineered mechanical products for industrial operations.",
+    slug: "mechanical",
+    title: "Mechanical",
+    short:
+      "Industrial mechanical products and materials for reliable plant operations.",
     image: mechanical,
     overview:
-      "Globe, ball, butterfly, gate and check valves engineered to meet the toughest pressure, temperature and corrosion requirements across oil & gas, petrochemical and power industries.",
+      "Comprehensive mechanical solutions including industrial control valves, SS flanges, fasteners, tanks, metal products, and raw materials. Designed to support demanding industrial, petrochemical, oil & gas, and manufacturing operations with reliable performance and durability.",
     applications: [
-      "industrial-control-valves",
-      "ss-flanges",
+      "Industrial-Control-Valves",
+      "SS-Flanges",
       "Industrial Fasteners & Stud Bolts",
-      
     ],
     benefits: [
       "Industrial Tanks - FRP and GRP",
@@ -51,22 +51,28 @@ export const services: Service[] = [
   },
   {
     slug: "instrumentation",
-    title: "Instrumentation ",
-    short: "Advanced instrumentation solutions for process monitoring and automation.",
+    title: "Instrumentation",
+    short:
+      "Process measurement, control, and automation solutions for industry.",
     image: instrument,
     overview:
-      "Stocked and custom-fabricated flanges in stainless, carbon and alloy steels. From slip-on to weld-neck, blind and lap-joint, supplied with full mill test certification.",
+      "Advanced instrumentation products for accurate monitoring, measurement, and process control. Offering gauges, control valves, sensors, flow meters, transmitters, communication cables, PLC/DCS systems, and automation accessories for industrial applications.",
     applications: [
-      "Pipeline & pipework systems",
-      "Pressure vessels",
-      "Process equipment skids",
-      "Hygienic & sanitary applications",
+      "Temperature and pressure Gauge",
+      "Control Valves",
+      "Level Gauges & Sensors",
+      "Flow Meters",
+      "Transmitters Thermocouples",
+      "Gas Detectors",
     ],
     benefits: [
-      "ASME B16.5 / B16.47 / EN1092-1",
-      "SS304, SS304L, SS316, SS316L, Duplex",
-      "PMI & hardness testing on request",
-      "Made-to-print fabrication available",
+      "Instrumentation communication Cables",
+      "Thermowells",
+      "Calibrators & Recorders",
+      "Solenoid Valves. Actuators",
+      "PLC & DCS",
+      "Digital Indicators & Controllers",
+      
     ],
     specifications: [
       { label: "Size Range", value: '1/2" – 96"' },
@@ -78,16 +84,14 @@ export const services: Service[] = [
   {
     slug: "hvac",
     title: "HVAC",
-    short: "Efficient heating, ventilation and cooling systems for industrial environments.",
+    short: "Complete HVAC products and services for efficient air management.",
     image: hvac,
     overview:
-      "Stud bolts, hex bolts, nuts, washers and gaskets engineered to ASME and ASTM grades. Supplied with PTFE, Xylan, hot-dip galvanised and zinc plated coatings.",
+      "Complete HVAC solutions including ducting materials, air filters, insulation systems, dampers, diffusers, control components, and professional installation services. Designed to ensure efficient air distribution, ventilation, cooling, and indoor air quality.",
     applications: [
-
       "Air Filters and Accessories",
-      "HVAC Ducting Materialss",
+      "HVAC Ducting Materials",
       "GI Ducts",
-      "Pre-Insulated Ducts",
       "Flexible Ducts",
       "Pre-Insulated Ducts",
       "Aluminum Ducts",
@@ -111,23 +115,17 @@ export const services: Service[] = [
   },
   {
     slug: "composite-material-supply",
-    title: "Composit material supply",
-    short: "High-performance composite materials for corrosion-resistant applications.",
+    title: "Composite Material Supply",
+    short: "Corrosion-resistant composite materials and piping solutions.",
     image: pipes,
     overview:
-      "Vertical, horizontal, atmospheric and pressure tanks fabricated from CS, SS and exotic alloys. Designed and built to API 650, ASME Sec VIII and customer specifications.",
+      "High-quality composite and industrial material supply solutions including FRP, GRP, and PVC piping systems, FRP/GRP storage tanks, Teflon gasket kits, rubber gaskets, and sealing products. Engineered for corrosion resistance, durability, and long-term industrial performance.",
     applications: [
       "FRP Pipe (Fiber Reinforced Plastic)",
       "GRP Pipe (Glass Reinforced Plastic)",
       "PVC Pipe (Polyvinyl Chloride)",
-      
     ],
-    benefits: [
-      "Teflon gas kits",
-      "Rubber gaskets",
-      "FRP tanks",
-      "GRP tanks",
-    ],
+    benefits: ["Teflon gas kits", "Rubber gaskets", "FRP tanks", "GRP tanks"],
     specifications: [
       { label: "Capacity", value: "1 KL – 50,000 KL" },
       { label: "Materials", value: "CS, SS304, SS316, Duplex" },
