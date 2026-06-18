@@ -1,7 +1,7 @@
 import instrument from "../assets/instrument.jpg";
 import hvac from "../assets/HVAC.jpg";
 
-import mechanical from "../assets/Mechanical.jpg";
+import mechanical from "../assets/mechanical.jpg";
 
 import pipes from "../assets/pipe.jpg";
 import Bolt from "../assets/mechanical/Bolts.jpg";
@@ -25,12 +25,12 @@ import temperature from "../assets/instrument/temperature.jpg";
 import Thermowells from "../assets/instrument/Thermowells.jpg";
 import Transmitters from "../assets/instrument/Transmitters.jpg";
 
-import GRP from "../assets/composite/GRP.jpg";
-import FRP from "../assets/composite/FRP.jpg";
-import PVC from "../assets/composite/PVC.jpg";
-import Rubber from "../assets/composite/Rubber.jpg";
-import Teflon from "../assets/composite/Teflon.jpg";
-import Pipe from "../assets/composite/Pipe.jpg";
+import GRP from "../assets/Composite/GRP.jpg";
+import FRP from "../assets/Composite/FRP.jpg";
+import PVC from "../assets/Composite/PVC.jpg";
+import Rubber from "../assets/Composite/Rubber.jpg";
+import Teflon from "../assets/Composite/Teflon.jpg";
+import Pipe from "../assets/Composite/Pipe.jpg";
 
 export interface Service {
   slug: string;
