@@ -1,15 +1,36 @@
-// import flanges from "../assets/prod-flanges.jpg";
 import instrument from "../assets/instrument.jpg";
-// import tanks from "../assets/prod-tanks.jpg";
 import hvac from "../assets/HVAC.jpg";
-// import bolts from "../assets/prod-bolts.jpg";
-// import bars from "../assets/prod-bars.jpg";
-// import valves from "../assets/hero-valves.jpg";
+
 import mechanical from "../assets/Mechanical.jpg";
-// import refinery from "../assets/hero-refinery.jpg";
-// import storage from "../assets/hero-tanks.jpg";
+
 import pipes from "../assets/pipe.jpg";
-// import water from "../assets/ind-water.jpg";
+import Bolt from "../assets/mechanical/Bolts.jpg";
+import Bar from "../assets/mechanical/bars.jpg";
+import Flange from "../assets/mechanical/flanges.jpg";
+import Raw from "../assets/mechanical/raw.jpg";
+import Tank from "../assets/mechanical/tank.jpg";
+import Valve from "../assets/mechanical/valve.jpg";
+
+import Ducts from "../assets/HVAC/Ducts.jpg";
+import Air from "../assets/HVAC/Air.jpg";
+import Aluminum from "../assets/HVAC/Aluminum.jpg";
+import Flexible from "../assets/HVAC/Flexible.jpg";
+import Ventilation from "../assets/HVAC/Ventilation.jpg";
+import Kitchen from "../assets/HVAC/Kitchen.jpg";
+
+import Gas from "../assets/instrument/Gas.jpg";
+import Level from "../assets/instrument/Level.jpg";
+import PLC from "../assets/instrument/PLC.jpg";
+import temperature from "../assets/instrument/temperature.jpg";
+import Thermowells from "../assets/instrument/Thermowells.jpg";
+import Transmitters from "../assets/instrument/Transmitters.jpg";
+
+import GRP from "../assets/composite/GRP.jpg";
+import FRP from "../assets/composite/FRP.jpg";
+import PVC from "../assets/composite/PVC.jpg";
+import Rubber from "../assets/composite/Rubber.jpg";
+import Teflon from "../assets/composite/Teflon.jpg";
+import Pipe from "../assets/composite/Pipe.jpg";
 
 export interface Service {
   slug: string;
@@ -17,6 +38,7 @@ export interface Service {
   short: string;
   image: string;
   overview: string;
+  gallery?: string[];
   applications: string[];
   benefits: string[];
   specifications: { label: string; value: string }[];
@@ -41,6 +63,14 @@ export const services: Service[] = [
       "Metal Bars & Products",
       "Industrial Raw Materials",
       // "Full traceability & MTC documentation",
+    ],
+    gallery: [
+      Bar,
+      Flange,
+      Bolt,
+      Valve,
+      Tank,
+      Raw,
     ],
     specifications: [
       { label: "Size Range", value: '1/2" – 60"' },
@@ -72,7 +102,15 @@ export const services: Service[] = [
       "Solenoid Valves. Actuators",
       "PLC & DCS",
       "Digital Indicators & Controllers",
-      
+
+    ],
+    gallery: [
+      Gas,
+      Level,
+      PLC,
+      temperature,
+      Thermowells,
+      Transmitters,
     ],
     specifications: [
       { label: "Size Range", value: '1/2" – 96"' },
@@ -95,6 +133,8 @@ export const services: Service[] = [
       "Flexible Ducts",
       "Pre-Insulated Ducts",
       "Aluminum Ducts",
+      "Ventilation System Installation",
+      "Kitchen Exhaust and Fresh Air Systems",
     ],
     benefits: [
       "Insulation Materials",
@@ -103,8 +143,15 @@ export const services: Service[] = [
       "Installation Services",
       "HVAC System Installation",
       "Air Distribution System Installation",
-      "Ventilation System Installation",
-      "Kitchen Exhaust and Fresh Air Systems",
+
+    ],
+    gallery: [
+      Ducts,
+      Air,
+      Aluminum,
+      Flexible,
+      Ventilation,
+      Kitchen,
     ],
     specifications: [
       { label: "Grades", value: "B7, B8, B8M, L7, 4.6 – 12.9" },
@@ -124,8 +171,17 @@ export const services: Service[] = [
       "FRP Pipe (Fiber Reinforced Plastic)",
       "GRP Pipe (Glass Reinforced Plastic)",
       "PVC Pipe (Polyvinyl Chloride)",
+      "Teflon gas kits",
     ],
-    benefits: ["Teflon gas kits", "Rubber gaskets", "FRP tanks", "GRP tanks"],
+    benefits: ["Rubber gaskets", "FRP tanks", "GRP tanks"],
+    gallery: [
+      Pipe,
+      Rubber,
+      PVC,
+      Teflon,
+      GRP,
+      FRP,
+    ],
     specifications: [
       { label: "Capacity", value: "1 KL – 50,000 KL" },
       { label: "Materials", value: "CS, SS304, SS316, Duplex" },

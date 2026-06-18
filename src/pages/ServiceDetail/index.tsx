@@ -1,7 +1,8 @@
-import { ArrowRight, ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, ArrowUpRight, CheckCircle2, Clock, Mail, MapPin, Phone } from "lucide-react";
 import { services } from "../../lib/services-data";
 import { Link, useParams, Navigate } from "react-router-dom"; import { LinkButton } from "../../components/ui/Buttons";
 import SectionHeading from "../../components/common/SectionHeading";
+import { InfoRow } from "../Contact";
 
 
 export default function ServiceDetail() {
@@ -74,20 +75,19 @@ export default function ServiceDetail() {
 
           {/* Specifications card */}
           <aside className="bg-brand-blue text-white p-8 md:p-10 sticky top-28 h-fit" data-aos="fade-left">
-            <span className="text-xs uppercase tracking-[0.22em] text-brand-red font-bold">Specifications</span>
-            <h3 className="mt-3 text-2xl font-black">Quick reference</h3>
-            <ul className="mt-6 divide-y divide-white/10">
-              {service.specifications.map((s) => (
-                <li key={s.label} className="py-4 flex items-center justify-between gap-4">
-                  <span className="text-xs uppercase tracking-[0.18em] text-white/60">{s.label}</span>
-                  <span className="font-display font-bold text-right">{s.value}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-8">
-              <LinkButton to="/contact" variant="accent" size="md" icon={<ArrowRight size={14} />}>
-                Request Quote
-              </LinkButton>
+            <div className=" text-white relative overflow-hidden">
+              {/* <div className="blueprint-grid absolute inset-0" /> */}
+              <div className="relative">
+                <span className="eyebrow !text-brand-red">Reach us</span>
+                <h3 className="mt-3 text-2xl font-black">Contact information</h3>
+                <ul className="mt-7 space-y-5 text-sm">
+                  <InfoRow icon={<Phone size={16} />} label="Phone" value="+91 82863 53007 " href="tel:+919999999999" />
+                  <InfoRow icon={<Mail size={16} />} label="Email" value="info@mechfro.com" href="mailto:info@mechfro.com" />
+                  <InfoRow icon={<MapPin size={16} />} label="Headquarters" value="Mechfro Engineering and Techlonology, 15 no. Building, Flat 12 No.,   LIG Colony, Kurla west, Mumbai - 400070., India" />
+                  <InfoRow icon={<Clock size={16} />} label="Hours" value="Mon–Sat, 09:00–18:30 IST" />
+                  {/* <InfoRow icon={<Globe size={16} />} label="Supply network" value="5 continents · 24 countries" /> */}
+                </ul>
+              </div>
             </div>
           </aside>
         </div>
@@ -98,7 +98,7 @@ export default function ServiceDetail() {
         <div className="container-x">
           <SectionHeading eyebrow="Gallery" title="Engineered" highlight="in detail." />
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[service.image, ...related.map((r) => r.image)].slice(0, 6).map((img, i) => (
+            {service.gallery?.slice(0, 6).map((img, i) => (
               <div key={i} className="overflow-hidden aspect-[4/3] group" data-aos="zoom-in" data-aos-delay={i * 60}>
                 <img src={img} alt="" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               </div>

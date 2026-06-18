@@ -12,7 +12,6 @@ const industries = [
   "Water Treatment",
   "Marine",
   "Infrastructure",
-  "Manufacturing",
 ];
 
 export default function Footer() {
@@ -113,7 +112,7 @@ export default function Footer() {
         <div className="border-t border-white/10">
           <div className="container-x py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/40">
             <p>© {new Date().getFullYear()} MECHFRO Engineering &amp; Technologies. All rights reserved.</p>
-            <p>Managed by <a href="https://giganexustechnology.com" className="hover:text-brand-red">Giga Nexus Technologies</a></p>
+            <p>Designed & Managed by <a href="https://giganexustechnology.com" className="hover:text-brand-red">Giga Nexus Technologies</a></p>
           </div>
         </div>
       </div>

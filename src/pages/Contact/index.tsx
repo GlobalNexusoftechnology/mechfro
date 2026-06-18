@@ -135,14 +135,7 @@ export default function Contact() {
             </div> */}
 
             <div className="border border-brand-border aspect-[5/4] relative overflow-hidden bg-brand-light">
-              <iframe
-                title="MECHFRO Location"
-                src="https://maps.google.com/maps?q=Mechfro%20Engineering%20and%20Technology,%2015%20No.%20Building,%20Flat%2012%20No.,%20LIG%20Colony,%20Kurla%20West,%20Mumbai%20400070,%20Maharashtra,%20India&t=&z=11&ie=UTF8&iwloc=&output=embed"
-                // src="https://maps.google.com/maps?q=Mumbai,%20Maharashtra,%20India&t=&z=11&ie=UTF8&iwloc=&output=embed"
-                className="absolute inset-0 w-full h-full"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241302.92009393635!2d72.72292789453127!3d19.091938799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c17a7716ffef%3A0x2753306233e9a6b8!2sMechPro%20Engineers!5e0!3m2!1sen!2sus!4v1781765989696!5m2!1sen!2sus" width="600" height="450" loading="lazy"></iframe>
             </div>
           </div>
         </div>
@@ -168,7 +161,7 @@ function inputCls(err: boolean) {
     err ? "border-brand-red" : "border-brand-border",
   );
 }
-function InfoRow({ icon, label, value, href }: { icon: React.ReactNode; label: string; value: string; href?: string }) {
+export function InfoRow({ icon, label, value, href }: { icon: React.ReactNode; label: string; value: string; href?: string }) {
   const body = (
     <>
       <span className="w-9 h-9 grid place-items-center bg-white/10 text-brand-red shrink-0">{icon}</span>
