@@ -1,7 +1,8 @@
-import { ArrowRight, ArrowUpRight, CheckCircle2, Clock, Mail, MapPin, Phone } from "lucide-react";
-import { services } from "../../lib/services-data";
-import { Link, useParams, Navigate } from "react-router-dom"; import { LinkButton } from "../../components/ui/Buttons";
+import { ArrowRight, ArrowUpRight, Clock, Mail, MapPin, Phone } from "lucide-react";
+import { Link, Navigate, useParams } from "react-router-dom";
 import SectionHeading from "../../components/common/SectionHeading";
+import { LinkButton } from "../../components/ui/Buttons";
+import { services } from "../../lib/services-data";
 import { InfoRow } from "../Contact";
 
 
