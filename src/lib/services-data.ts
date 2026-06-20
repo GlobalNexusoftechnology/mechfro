@@ -171,7 +171,7 @@ export const services: Service[] = [
       "FRP Pipe (Fiber Reinforced Plastic)",
       "GRP Pipe (Glass Reinforced Plastic)",
       "PVC Pipe (Polyvinyl Chloride)",
-      "Teflon gas kits",
+      "Teflon Gaskets Kits",
     ],
     benefits: ["Rubber gaskets", "FRP tanks", "GRP tanks"],
     gallery: [
